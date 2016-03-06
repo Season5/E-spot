@@ -12,7 +12,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity android:name=".Movies" />
@@ -20,7 +20,16 @@
         <activity android:name=".Animations" />
         <activity android:name=".Documentaries" />
         <activity android:name=".AboutUs" />
-        <activity android:name=".Splash"></activity>
+        <activity android:name=".Splash">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+
+
+        </activity>
     </application>
 
 </manifest>
