@@ -13,9 +13,24 @@ public class Movies extends ListActivity {
 
     String [] movies = {
 
-
-
-
+        "Batman Vs Superman- Dawn Of Justice",
+            "Captain America - Civil War",
+            "Deadpool",
+            "X-men Apocalypse",
+            "Suicide Squad",
+            "The Jungle Book",
+            "The Divergent series - Allegient",
+            "Independence Day: Resurgence",
+            "Rogue One : A star wars Story",
+            "Doctor Strange",
+            "13 Hours: The Secret Soldiers",
+            "Star Treck Beyond",
+            "Assasins Creed The Movie",
+            "The 5th wave",
+            "Ride Along 2",
+            "The Huntsman: WInter's war",
+            "The Birth of a nation",
+            "Gods of Egypt",
 
     };
 
