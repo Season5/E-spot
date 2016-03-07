@@ -1,13 +1,51 @@
 package com.espot.ent.entertainmentspot;
 
+import android.app.ListActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.Toast;
 
-public class Series extends AppCompatActivity {
+public class Series extends ListActivity {
+
+
+    String [] series = {
+
+            "Batman Vs Superman- Dawn Of Justice",
+            "Captain America - Civil War",
+            "Deadpool",
+            "X-men Apocalypse",
+            "Suicide Squad",
+            "The Jungle Book",
+            "The Divergent series - Allegient",
+            "Independence Day: Resurgence",
+            "Rogue One : A star wars Story",
+            "Doctor Strange",
+            "13 Hours: The Secret Soldiers",
+            "Star Treck Beyond",
+            "Assasins Creed The Movie",
+            "The 5th wave",
+            "Ride Along 2",
+            "The Huntsman: WInter's war",
+            "The Birth of a nation",
+            "Gods of Egypt",
+
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.series);
+        //setContentView(R.layout.series);
+        setListAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, series));
     }
+
+    public void onListItemClick(
+            ListView parent, View v, int position, long id)
+    {
+        Toast.makeText(this, "Your Choice is " + series[position], Toast.LENGTH_LONG).show();
+    }
+
+
 }
