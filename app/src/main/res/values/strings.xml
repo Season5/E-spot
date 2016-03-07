@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Entertainment Spot</string>
+    <string name="movies">MOVIES</string>
+    <string name="series">SERIES</string>
+    <string name="animation">ANIMATIONS</string>
+    <string name="documentaries">DOCUMENTARIES</string>
+    <string name="about_us">ABOUT US</string>
 </resources>
